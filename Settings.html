@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+
+    <style>
+        .checkbox-wrapper-34 {
+          --blue: #0D7EFF;
+          --g08: #E1E5EB;
+          --g04: #848ea1;
+        }
+      
+        .checkbox-wrapper-34 .tgl {
+          display: none;
+        }
+        .checkbox-wrapper-34 .tgl,
+        .checkbox-wrapper-34 .tgl:after,
+        .checkbox-wrapper-34 .tgl:before,
+        .checkbox-wrapper-34 .tgl *,
+        .checkbox-wrapper-34 .tgl *:after,
+        .checkbox-wrapper-34 .tgl *:before,
+        .checkbox-wrapper-34 .tgl + .tgl-btn {
+          box-sizing: border-box;
+        }
+        .checkbox-wrapper-34 .tgl::selection,
+        .checkbox-wrapper-34 .tgl:after::selection,
+        .checkbox-wrapper-34 .tgl:before::selection,
+        .checkbox-wrapper-34 .tgl *::selection,
+        .checkbox-wrapper-34 .tgl *:after::selection,
+        .checkbox-wrapper-34 .tgl *:before::selection,
+        .checkbox-wrapper-34 .tgl + .tgl-btn::selection {
+          background: none;
+        }
+        .checkbox-wrapper-34 .tgl + .tgl-btn {
+          outline: 0;
+          display: block;
+          width: 57px;
+          height: 27px;
+          position: relative;
+          cursor: pointer;
+          user-select: none;
+          font-size: 12px;
+          font-weight: 400;
+          color: #fff;
+        }
+        .checkbox-wrapper-34 .tgl + .tgl-btn:after,
+        .checkbox-wrapper-34 .tgl + .tgl-btn:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 44%;
+          height: 100%;
+        }
+        .checkbox-wrapper-34 .tgl + .tgl-btn:after {
+          left: 0;
+        }
+        .checkbox-wrapper-34 .tgl + .tgl-btn:before {
+          display: inline;
+          position: absolute;
+          top: 7px;
+        }
+        .checkbox-wrapper-34 .tgl:checked + .tgl-btn:after {
+          left: 56.5%;
+        }
+      
+        .checkbox-wrapper-34 .tgl-ios + .tgl-btn {
+          background: var(--g08);
+          border-radius: 20rem;
+          padding: 2px;
+          transition: all 0.4s ease;
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+        }
+        .checkbox-wrapper-34 .tgl-ios + .tgl-btn:after {
+          border-radius: 2em;
+          background: #fff;
+          transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        }
+        .checkbox-wrapper-34 .tgl-ios + .tgl-btn:before {
+          content: "No";
+          left: 28px;
+          color: var(--g04);
+          transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active {
+          box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+        .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active:after {
+          padding-right: 0.4em;
+        }
+        .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn {
+          background: var(--blue);
+        }
+        .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active {
+          box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+        .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active:after {
+          margin-left: -0.4em;
+        }
+        .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:before {
+          content: "Yes";
+          left: 4px;
+          color: #fff;
+        }
+      </style>
+  
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidbar p-20 m-20 bg-white p-relative">
+           <h3 class="p-relative text-c mt-0">zaied</h3>
+           <ul>
+            <li>
+                <a class=" d-flex align-c fs-14 c-black rad-6 p-10" href="index.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a class=" active d-flex align-c fs-14 c-black rad-6 p-10" href="Settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a class=" d-flex align-c fs-14 c-black rad-6 p-10" href="Projects.html">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+
+            <li>
+                <a class=" d-flex align-c fs-14 c-black rad-6 p-10" href="Courses.html">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+
+            <li>
+                <a class=" d-flex align-c fs-14 c-black rad-6 p-10" href="Friends.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>Friends</span>
+                </a>
+            </li>
+
+            <li>
+                <a class=" d-flex align-c fs-14 c-black rad-6 p-10" href="Files.html">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span>Files</span>
+                </a>
+            </li>
+
+            <li>
+                <a class=" d-flex align-c fs-14 c-black rad-6 p-10" href="Plans.html">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span>Plans</span>
+                </a>
+            </li>
+           </ul>
+        </div>
+        <div class="content w-full">
+            <header class="d-flex rad-6  m-20 bg-white p-relative">
+                <div class="inputs">
+                    <input type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="img-icon">
+                    <i class="fa-regular fa-bell"></i>
+                    <img  src="images/avatar.png"></div>
+            </header>
+            <h3 class="title m-20 p-relative">
+                Settings
+            </h3>
+             <!--start setting-->
+         <div class="settings p-gridL mr">
+            <div class="Site bg-white h-300 rad-6">
+                <p class="prgrapgh-style">Site Control</p>
+                <span class="spa-style">Control The Website If There Is Maintenance</span>
+               <div class="card d-flex m-20">
+                <div class="content">
+                    <p class="prgrapgh-style">Website Control</p>
+                    <span class="spa-style">Open/Close Website And Type The Reason</span>
+                </div>
+                <div class="checkbox-wrapper-34">
+                    <input class='tgl tgl-ios' id='toggle-34' type='checkbox'>
+                    <label class='tgl-btn' for='toggle-34'></label>
+                  </div>
+               </div>
+               <div class="inputs m-20"><input class="rad-6" type="tel" placeholder="close message content"></div>
+            </div>
+            <div class="General bg-white h-300 rad-6">
+                <p class="prgrapgh-style">General Info</p>
+                <span class="spa-style">General Information About Your Account</span>
+                <div class="inputs m-20">
+                    <label class="spa-style">First nam</label>
+                    <br>
+                    <input type="tel" placeholder="First nam">
+                    <br>
+                    <label class="spa-style">last nam</label>
+                    <br>
+                    <input type="tel" placeholder="last nam">
+                    <br>
+                    <label class="spa-style">Email</label>
+                    <br>
+                    <input type="email" placeholder="@email" disabled class="bg-transpernt"> <a class="style-link" href="#">change</a>
+                </div>
+            </div>
+            <div class=" Security bg-white h-300 rad-6">
+                <p class="prgrapgh-style">Security Info</p>
+                <span class="spa-style">Security Information About Your Account</span>
+               <div class="card-one m-10">
+                <p class="prgrapgh-style">Password</p>
+                <span class="spa-style">Last Change On 25/10/2021 <a class="style-link" href="#">change</a></span>
+               </div>
+               <div class="card-two m-10">
+                <p class="prgrapgh-style">Two-Factor</p>
+                <span class="spa-style">Enable/Disable The Feature  <a class="style-link" href="#">Device</a></span>
+               </div>
+               <div class="card-three m-10">
+                <p class="prgrapgh-style">Deevices</p>
+                <span class="spa-style">Check The Login Devices List <a class="style-link" href="#">Device</a></span>
+               </div>
+            </div>
+            <div class=" Social bg-white h-300 rad-6">
+                <p class="prgrapgh-style">Social Info</p>
+                <span class="spa-style">Social Media Information</span>
+                <div class="content m-20">
+                  <div class="inputs m-10">
+                    <i class="fa-brands fa-youtube"></i><input type="text" placeholder="youtube username">
+                    <br>
+                    <i class="fa-brands fa-facebook-f"></i><input type="text" placeholder="facebook username">
+                    <br>
+                    <i class="fa-brands fa-linkedin-in"></i><input type="text" placeholder="linkedin  username">
+                    <br>
+                    <i class="fa-brands fa-twitter"></i><input type="text" placeholder="twitter username">
+                  </div>
+                </div>
+                </div>
+            </div>
+
+            <div class=" Backup bg-white h-300 rad-6 m-10">
+              <p class="prgrapgh-style">Backup Manager</p>
+              <span class="spa-style">Control Backup Time And Location</span>
+              <ul class="m-10 p-10">
+                <li><input type="radio"> <a href="#">Daily</a></li>
+                <li><input type="radio"> <a href="#">Weekly</a></li>
+                <li><input type="radio"> <a href="#">Yearly</a></li>
+              </ul>
+              <div class="content d-flex">
+                <a class="box">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  <p >Megaman</p>
+                </a>
+                <a class="box">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  <p >Zaero</p>
+                </a>
+                <a class="box">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  <p >Sigma</p>
+                </a>
+                
+                
+              </div>
+            </div>
+         </div>
+           <!--end setting-->
+        </div>
+    </div>
+</body>
+</html>
